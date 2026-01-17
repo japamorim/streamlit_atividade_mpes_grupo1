@@ -70,7 +70,7 @@ dia = df.columns[8]
 df[temp_col] = df[temp_col].str.replace(',', '.').astype(float)
 
 # Interactive Scatter Plot: Temperature vs Consumption
-st.header("2. Day of Week vs Consumption (colored by Temperature)")
+st.header("2. Day of Week(mon ->sum) vs Consumption (colored by Temperature)")
 
 fig_scatter = px.scatter(df, 
                          x=dia, 
